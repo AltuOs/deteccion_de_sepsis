@@ -1,5 +1,5 @@
 # Home
-# Video y producto (calculadora)
+# Notebook, Video y producto
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/AltuOs/deteccion_de_sepsis/blob/main/MODESAFE.ipynb)
 # Desafío
 **Reto:** Potenciar la detección temprana de sepsis mediante el análisis de series temporales fisiológicas.

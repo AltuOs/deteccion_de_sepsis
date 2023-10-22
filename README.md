@@ -88,7 +88,15 @@ Se asigna un puntaje a cada sistema según la gravedad de la disfunción. Un pun
 ### Referencias
 - Beltran, C. F. T., Ibañez, E. D. V., Orejuela, V. M., & García Henao, J. A. (2022, September). A Machine Learning-Based Missing Data Imputation with FHIR Interoperability Approach in Sepsis Prediction. In Latin American High Performance Computing Conference (pp. 116-130). Cham: Springer International Publishing.
 - Reyna, M. A., Josef, C. S., Jeter, R., Shashikumar, S. P., Westover, M. B., Nemati, S., ... & Sharma, A. (2020). Early prediction of sepsis from clinical data: the PhysioNet/Computing in Cardiology Challenge 2019. Critical care medicine, 48(2), 210-217.
+
 # Código
+Para ejemplificar aplicaciones de la IA para la detección de sepsis en un paciente medico, se propuso el desarrollo de un modelo de aprendizaje supervisado usando los datos propuestos para el proyecto, dicho modelo esta enfocado en hacer una clasificación de un perfil de paciente en dos casos, a saber, potencial caso de sepsis o sin riesgo.
+
+Para hacer esta clasificación se hacen uso del algoritmo de machine learning random forest, donde la variable objetivo para predecir es la columna ‘SepsisLabel’, de dataset, que contiene el dato si el paciente fue diagnosticado con sepsis o no.
+
+Para dar un refuerzo a esta clasificación se usan datos referentes al indicador SOFA, esto para tratar de ajustar el modelo para que pueda identificar correctamente los casos positvos de sepsis para que estos puedan ser tratados lo mas pronto posibles.
+
+Una vez desarrollado el modelo y hecho todo los test de precisión del mismo, este se puede colocar en producción para que pueda ser utilizado de manera sencilla por usuarios (principalmente enfocados a profesionales del área de salud), y tener una segunda opinión sobre la posibilidad de riesgo de sepsis en un paciente.
 
 # Sobre nosotros
 - **Oscar Altuve:** Soy egresado de la Licenciatura en Física en la Universidad de Los Andes (ULA), participé de la 2da. cohorte de LA-CoNGA physics y actualmente soy estudiante de la Maestría en Física en la Universidad Simón Bolívar (USB) en Venezuela. Mi área de estudio es física de altas energías experimental y ciencia de datos. Tengo habilidades en programación en C++ y Python, reproducibilidad científica, manejo herramientas de edición multimedia y nociones en diseño web. Participé en el hackathon CoAfina 2022, una experiencia maravillosa que me permitió colaborar con otros estudiantes de América Latina para encontrar soluciones innovadoras a retos científicos y educativos usando datos abiertos. Es un placer formar parte de esta nueva edición y espero seguir compartiendo y aprendiendo con todos ustedes. 
